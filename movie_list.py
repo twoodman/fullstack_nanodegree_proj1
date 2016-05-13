@@ -9,14 +9,6 @@ sicario = media.Movie("Sicario",
                       "https://upload.wikimedia.org/wikipedia/en/4/4b/Sicario_poster.jpg",
                       "https://www.youtube.com/watch?v=sR0SDT2GeFg")
 
-starwars_vii = media.Movie("Star Wars: The Force Awakens",
-                           "Three decades after the defeat of the Galactic Empire,"
-                           " a new threat arises. The First Order attempts to rule"
-                           " the galaxy and only a ragtag group of heroes can stop them,"
-                           " along with the help of the Resistance.",
-                           "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
-                           "https://www.youtube.com/watch?v=sGbxmsDFVnE")
-
 seven = media.Movie("Se7en",
                     "Two detectives, a rookie and a veteran, hunt a serial killer"
                     " who uses the seven deadly sins as his modus operandi.",
@@ -46,7 +38,8 @@ harry_potter_sorcerers_stone = media.Movie("Harry Potter and the Sorcerer's Ston
 
 deadpool = media.Movie("Deadpool",
                        "A former Special Forces operative turned mercenary is subjected to a rogue"
-                       " experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
+                       " experiment that leaves him with accelerated healing powers,"
+                       " adopting the alter ego Deadpool.",
                        "https://upload.wikimedia.org/wikipedia/en/4/46/Deadpool_poster.jpg",
                        "https://www.youtube.com/watch?v=gtTfd6tISfw")
 
@@ -64,6 +57,16 @@ american_sniper = media.Movie("American Sniper",
                               "https://upload.wikimedia.org/wikipedia/en/1/10/American_Sniper_poster.jpg",
                               "https://www.youtube.com/watch?v=U9RFwgOBcAM")
 
+starwars_vii = media.Movie("Star Wars: The Force Awakens",
+                           "Three decades after the defeat of the Galactic Empire,"
+                           " a new threat arises. The First Order attempts to rule"
+                           " the galaxy and only a ragtag group of heroes can stop them,"
+                           " along with the help of the Resistance.",
+                           "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
+                           "https://www.youtube.com/watch?v=sGbxmsDFVnE")
+
 #declaring an array for use with the opens_movies_page function in the fresh_tomatoes module
-movies = [sicario, starwars_vii, seven, princess_mononoke, the_matrix, harry_potter_sorcerers_stone, deadpool, interstellar, american_sniper]
+movies = [sicario, seven, princess_mononoke, the_matrix, harry_potter_sorcerers_stone, deadpool, interstellar, american_sniper, starwars_vii]
+#calling 'open_movies_page function' from 'fresh_tomatoes' module
+#this creates our webpage and opens it in the default browser
 fresh_tomatoes.open_movies_page(movies)
