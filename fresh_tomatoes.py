@@ -39,13 +39,17 @@ main_page_head = '''
             border: 1px solid #f1c40f;
         }
         .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 40px;
+            padding-top: 40px;
             color: #ffffff;
         }
         .movie-tile h2 {
             font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
+            font-size: 20px;
+        }
+        .movie-tile h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
         }
         .movie-tile:hover {
             background-color: #1abc9c;
@@ -139,6 +143,7 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
+    <h3>{storyline}</h3>
 </div>
 '''
 
@@ -159,7 +164,8 @@ def create_movie_tiles_content(movies):
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            trailer_youtube_id=trailer_youtube_id,
+            storyline=movie.storyline
         )
     return content
 
