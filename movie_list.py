@@ -1,7 +1,7 @@
-import fresh_tomatoes #importing the fresh_tomatoes module
-import media #importing media module
+import fresh_tomatoes # importing the fresh_tomatoes module
+import media # importing media module
 
-#a list of 9 of my favourite movies
+# a list of 9 of my favourite movies
 sicario = media.Movie("Sicario",
                       "An idealistic FBI agent is enlisted by a government task force"
                       " to aid in the escalating war against drugs at the"
@@ -65,8 +65,8 @@ starwars_vii = media.Movie("Star Wars: The Force Awakens",
                            "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
                            "https://www.youtube.com/watch?v=sGbxmsDFVnE")
 
-#declaring an array for use with the opens_movies_page function in the fresh_tomatoes module
+# declaring an array for use with the opens_movies_page function in the fresh_tomatoes module
 movies = [sicario, seven, princess_mononoke, the_matrix, harry_potter_sorcerers_stone, deadpool, interstellar, american_sniper, starwars_vii]
-#calling 'open_movies_page function' from 'fresh_tomatoes' module
-#this creates our webpage and opens it in the default browser
+# calling 'open_movies_page function' from 'fresh_tomatoes' module
+# this creates our webpage and opens it in the default browser
 fresh_tomatoes.open_movies_page(movies)
