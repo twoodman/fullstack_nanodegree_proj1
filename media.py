@@ -1,8 +1,9 @@
-import webbrowser #importing webbrowser module from python standard library
+import webbrowser # importing webbrowser module from python standard library
 
-#creating Movie class
+# creating Movie class
 class Movie():
-    #defining the 'init' function that runs when we use the Movie class
+    """creating Movie() class to easily list movies on site, includes init() [initialize]
+    and show_trailer() [opens a browser page to specified url]"""
     def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
         #assigning parameter values to 'self' variables
         self.title = movie_title
