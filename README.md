@@ -11,3 +11,9 @@ Written in python, but also includes html, css, js, and the bootstrap framework.
 -----
 
 ```python movies_list.py``` or, run movies_list.py in IDLE
+
+
+OR
+
+
+Just [open the already compiled](http://twoodman.github.io/FSND-P1-Movie-Trailer-Website) ```index.html```
